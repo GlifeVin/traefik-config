@@ -4,6 +4,7 @@ tcp:
       service: mongo
       middlewares:
         - ip-whitelist
+      rule: "HostSNI(`*`)"
   services:
     mongo:
       loadbalancer:
