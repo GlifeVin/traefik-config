@@ -11,6 +11,7 @@ tcp:
           address: mongo.railway.internal:27017
   middlewares:
     ip-whitelist:
-      sourceRange:
-        - 115.73.209.93
-        - 27.64.81.165
+      ipWhiteList:
+        sourceRange:
+          - 115.73.209.93
+          - 27.64.81.165
