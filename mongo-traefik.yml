@@ -1,0 +1,16 @@
+tcp:
+  routers:
+    mongo:
+      service: mongo
+      middlewares:
+        - ip-whitelist
+  services:
+    mongo:
+      loadbalancer:
+        servers:
+          address: mongo.railway.internal:27017
+  middlewares:
+    ip-whitelist:
+      sourceRange:
+        - 115.73.209.93
+        - 27.64.81.165
