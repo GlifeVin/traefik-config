@@ -13,5 +13,5 @@ tcp:
     ip-whitelist:
       ipWhiteList:
         sourceRange:
-          - 115.73.209.93
-          - 27.64.81.165
+          - "115.73.209.93"
+          - "27.64.81.165"
